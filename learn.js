@@ -1,27 +1,29 @@
-// datatype - 8
+/* primitive vs non primitive */
 
-//////// primitive
-//  string
-// number
-// boolean
-// undefined
-// null
-// bigint
-// symbol
+// primitive immutable
+let courseName = "Js";
+courseName = "K"
+console.log(courseName)
 
-///////// non primitive
+// non primitive mutable
+const languages = ["malayalam", "tamil"]
+languages[1] = "english"
+// console.log(languages[1])
 
-// object
 
-const course = {
-    name: "Js",
-    price: 1000,
-    isAvailable: false,
-    123: 10
-};
+let num1 = 10;
 
-console.log(course)
+let num2 = num1;
 
-const languages = ["malayalam", 123, false]
+num2 = 20
 
-console.log(languages[0])
+
+const user1 = {name:"Niyas"}
+const user2 = user1;
+user2.name = "Subin"
+
+if(num1 == num2){
+    console.log("equal")
+}else{
+    console.log("not equal")
+}
